@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/id1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="0"
+        app:layout_constraintEnd_toStartOf="@+id/id2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/card_view"/>
+
+    <Button
+        android:id="@+id/id2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="34dp"
+        android:layout_marginStart="8dp"
+        android:text="1"
+        android:background="@drawable/card_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/id1" />
+
+    <Button
+        android:id="@+id/id3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/id2"
+        app:layout_constraintTop_toTopOf="@+id/id2"
+        android:background="@drawable/card_view"/>
+
+    <Button
+        android:id="@+id/id4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        app:layout_constraintEnd_toEndOf="@+id/id1"
+        app:layout_constraintStart_toStartOf="@+id/id1"
+        app:layout_constraintTop_toTopOf="@+id/id5"
+        tools:ignore="MissingConstraints"
+        android:background="@drawable/card_view"
+        />
+
+    <Button
+        android:id="@+id/id5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="5"
+        app:layout_constraintEnd_toStartOf="@+id/id6"
+        app:layout_constraintStart_toEndOf="@+id/id4"
+        app:layout_constraintTop_toBottomOf="@+id/id2"
+        android:background="@drawable/card_view"/>
+
+    <Button
+        android:id="@+id/id6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8"
+        app:layout_constraintEnd_toEndOf="@+id/id3"
+        app:layout_constraintStart_toStartOf="@+id/id3"
+        app:layout_constraintTop_toTopOf="@+id/id5"
+        android:background="@drawable/card_view"/>
+
+    <Button
+        android:id="@+id/id7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="13"
+        app:layout_constraintEnd_toEndOf="@+id/id4"
+        app:layout_constraintStart_toStartOf="@+id/id4"
+        app:layout_constraintTop_toBottomOf="@+id/id4"
+        android:background="@drawable/card_view"/>
+
+    <Button
+        android:id="@+id/id8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20"
+        app:layout_constraintEnd_toEndOf="@+id/id5"
+        app:layout_constraintStart_toStartOf="@+id/id5"
+        app:layout_constraintTop_toTopOf="@+id/id7"
+        android:background="@drawable/card_view"/>
+
+    <Button
+        android:id="@+id/id9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="?"
+        app:layout_constraintEnd_toEndOf="@+id/id6"
+        app:layout_constraintStart_toStartOf="@+id/id6"
+        app:layout_constraintTop_toTopOf="@+id/id8"
+        android:background="@drawable/card_view"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/other"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginStart="8dp"
+        android:text="Outro Valor"
+        app:layout_constraintBottom_toBottomOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editText" />
+</android.support.constraint.ConstraintLayout>
